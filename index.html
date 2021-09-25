@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body ng-controller="mainAppController as ctrl">
+
+    <button ng-click="ctrl.sayHello();" ng-class="ctrl.clicked">Click me</button>
+    <button ng-click="ctrl.sayHello2();" ng-class="ctrl.clicked">Click me</button>
+
+    <!-- Lib -->
+    <script src="lib/angular.min.js"></script>
+
+    <!-- module -->
+    <script src="angular/main-app.module.js"></script>
+
+    <!-- controller -->
+    <script src="angular/main-app.controller.js"></script>
+
+</body>
+</html>
